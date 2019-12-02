@@ -6,10 +6,10 @@ import cProfile
 import pstats
 import argparse
 
-from examples.pybullet.utils.pybullet_tools.pr2_primitives import Pose, Conf, get_ik_ir_gen, get_motion_gen, \
+from examples.pybullet.utils.pybullet_tools.movo_primitives import Pose, Conf, get_ik_ir_gen, get_motion_gen, \
     get_stable_gen, get_grasp_gen, Attach, Detach, Clean, Cook, control_commands, \
     get_gripper_joints, GripperCommand, apply_commands, State
-from examples.pybullet.utils.pybullet_tools.pr2_problems import cleaning_problem, cooking_problem
+from examples.pybullet.utils.pybullet_tools.movo_problems import cleaning_problem, cooking_problem
 from examples.pybullet.utils.pybullet_tools.movo_utils import get_arm_joints, ARM_NAMES, get_group_joints, get_group_conf
 from examples.pybullet.utils.pybullet_tools.utils import connect, get_pose, is_placement, point_from_pose, \
     disconnect, user_input, get_joint_positions, enable_gravity, save_state, restore_state, HideOutput, \
